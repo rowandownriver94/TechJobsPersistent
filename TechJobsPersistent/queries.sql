@@ -13,6 +13,6 @@ WHERE LOCATION = "St. Louis City";
 --Part 3
 
 SELECT * FROM skills 
-INNER JOIN jobSkills ON skills.Id = jobskills.skillId 
+LEFT JOIN jobSkills ON skills.Id = jobskills.skillId 
 WHERE jobskills.jobId IS NOT NULL 
 ORDER BY NAME ASC;
